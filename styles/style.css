@@ -1,0 +1,58 @@
+/* @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Roboto:400,500&display=swap'); */
+@import url('https://fonts.googleapis.com/css?family=Lato|Maven+Pro:400,500|Roboto:400,500&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+}
+
+body, html{
+    background-color: #e3e3e3;
+    overflow-x: hidden;
+}
+
+.intro .borders{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    margin-bottom: 200px;
+}
+
+.intro .borders .thin-border{
+    border-bottom: 5px solid #e67e22;
+}
+
+.intro .borders .fat-border{
+    border-bottom: 150px solid #ecf0f1;
+}
+
+.intro .portfolio-img{
+    width: 100%;
+}
+
+.intro .portfolio-img img{
+    display: block;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 3%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.intro .details{
+    text-align: center;
+    /* color: #34495e; */
+}
+
+.intro .details h2{
+    color: #34495e;
+    font-size: 30px;
+}
