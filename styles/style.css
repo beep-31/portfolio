@@ -6,7 +6,7 @@
     margin: 0;
 }
 
-h2{
+h2, h3{
     font-family: 'Lato', sans-serif;
     font-weight: 500;
 }
@@ -14,6 +14,23 @@ h2{
 body, html{
     background-color: #e3e3e3;
     overflow-x: hidden;
+}
+
+ul, li{
+    list-style: none;
+}
+
+.container{
+    max-width: 1190px;
+    padding: 0px 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* intro section */
+
+.intro{
+    padding-bottom: 100px;
 }
 
 .intro .borders{
@@ -55,4 +72,38 @@ body, html{
 .intro .details h2{
     color: #34495e;
     font-size: 30px;
+}
+
+/* experience section */
+
+.experience{
+    background: #34495e;
+    color: #fff;
+    padding: 100px 0px;
+}
+
+.experience h2{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.experience .blocks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.experience .block{
+    text-align: center;
+    width: 33%;
+}
+
+
+
+.experience svg{
+    width: 100px;
+    height: 100px;
+    fill: #e67e22;
 }
