@@ -84,6 +84,12 @@ ul, li{
     font-size: 30px;
 }
 
+.intro .details span{
+    font-weight: 300;
+    font-size: .7em;
+    color: #e67e22;
+}
+
 /* experience section */
 
 .experience{
