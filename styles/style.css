@@ -1,5 +1,5 @@
 /* @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Roboto:400,500&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Lato:500,900|Maven+Pro:400,500|Roboto:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Maven+Pro:400,500|Roboto:400,500&display=swap');
 *{
     box-sizing: border-box;
     padding: 0;
@@ -82,12 +82,14 @@ ul, li{
 .intro .details h2{
     color: #34495e;
     font-size: 30px;
+    margin-bottom: 30px;
 }
 
 .intro .details span{
     font-weight: 300;
-    font-size: .7em;
-    color: #e67e22;
+    font-size: 30px;
+    color: #34495e;
+    font-family: 'Lato', sans-serif;
 }
 
 /* experience section */
