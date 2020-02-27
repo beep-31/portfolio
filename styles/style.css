@@ -16,6 +16,10 @@ body, html{
     overflow-x: hidden;
 }
 
+a{
+    text-decoration: none;
+}
+
 ul, li{
     list-style: none;
 }
@@ -149,16 +153,78 @@ ul, li{
     font-size: 25px;
     color: #97a2a3;
     font-family: "Marven Pro", sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .works .portfolio-pages .page{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.works .portfolio-pages .page.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
 }
 
 .page .img img{
     width: 800px;
     height: auto;
+}
+
+.page .txt-part{
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+}
+
+.page.reverse .txt-part{
+    padding-right: 50px;
+    margin-left: 100px;
+}
+
+.page .txt-part .page-title{
+    font-weight: 900 !important;
+    color: #738182;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.page .txt-part .page-description{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #738182;
+    line-height: 1.5;
+    margin-bottom: 120px;
+}
+
+.page .visit .visit-btn{
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    transition: .3s ease-in-out;
+    border: 2px solid #ee760c;
+    color: #e67e22;
+    background-color: transparent;
+    border-radius: 45px;
+    padding: 12px 40px;
+}
+
+.page .visit .visit-btn:hover{
+    padding: 12px 50px;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.page .visit .visit-btn:focus,
+.page .visit .visit-btn:active{
+    outline: 0;
+    color: #fff;
+    background-color: #e67e22;
 }
