@@ -236,3 +236,39 @@ ul, li{
     color: #fff;
     background-color: #e67e22;
 }
+
+
+@media (max-width:1440px){
+    .container{
+        max-width: 1110px;
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+
+    .page .img img{
+        width: 700px;
+        height: auto;
+    }
+
+    .page .visit .visit-btn,
+    .page.reverse .visit-btn{
+        font-size: 14px;
+        line-height: normal;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        transition: .3s ease-in-out;
+        border: 2px solid #ee760c;
+        color: #e67e22;
+        background-color: transparent;
+        border-radius: 45px;
+        padding: 9px 35px;
+    }
+    
+    .page .visit .visit-btn:hover{
+        padding: 9px 40px;
+        color: #fff;
+        background-color: #e67e22;
+    }
+}
