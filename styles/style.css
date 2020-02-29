@@ -40,10 +40,6 @@ ul, li{
 
 /* intro section */
 
-.intro{
-    padding-bottom: 100px;
-}
-
 .intro .borders{
     position: relative;
     width: 100%;
@@ -77,6 +73,7 @@ ul, li{
 
 .intro .details{
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .intro .details h2{
@@ -90,6 +87,24 @@ ul, li{
     font-size: 30px;
     color: #34495e;
     font-family: 'Lato', sans-serif;
+    transition: 0.5s linear;
+}
+
+.intro .icon{
+    text-align: center;
+}
+
+.intro svg{
+    /* fill: #fff; */
+    width: 30px;
+    height: 30px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: 0.3s ease-in-out;
+}
+
+.intro svg:hover{
+    opacity: 1;
 }
 
 /* experience section */
