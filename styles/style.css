@@ -11,6 +11,14 @@ h2, h3{
     font-weight: 500 !important;
 }
 
+button{
+    border: none;
+}
+
+input{
+    outline: none;
+}
+
 body, html{
     background-color: #e3e3e3;
     overflow-x: hidden;
@@ -73,7 +81,7 @@ ul, li{
 
 .intro .details{
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .intro .details h2{
@@ -88,6 +96,30 @@ ul, li{
     color: #34495e;
     font-family: 'Lato', sans-serif;
     transition: 0.5s linear;
+}
+
+.contact-button{
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.intro .contact-btn{
+    color: #ee760c;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #ee760c;
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 30px;
+    transition: 0.3s ease-in;    
+}
+
+.intro .contact-btn:hover{
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    background: #ee760c;
+    padding: 15px 36px;
 }
 
 .intro .icon{
@@ -252,6 +284,55 @@ ul, li{
     background-color: #e67e22;
 }
 
+/* contact section  */
+
+.contact{
+    background-color: #ee760c;
+    padding: 100px 0px;
+}
+
+.contact .title{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+.contact .description{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+    font-family: "Marven Pro", sans-serif;
+    margin-bottom: 80px;
+}
+
+.contact .form-block{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.form-block p{
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.form-block input.small{
+    padding: 10px 0px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    /* min-width: 100%; */
+}
+
+
+/* media  */
 
 @media (max-width:1440px){
     .container{
