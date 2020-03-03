@@ -1,9 +1,16 @@
 /* @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Roboto:400,500&display=swap'); */
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Maven+Pro:400,500|Roboto:400,500&display=swap');
-*{
+*,
+:before,
+:after{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+textarea{
+    resize: none;
+    overflow-y: hidden;
 }
 
 h2, h3{
@@ -287,7 +294,7 @@ ul, li{
 /* contact section  */
 
 .contact{
-    background-color: #ee760c;
+    background-color: #34495e;
     padding: 100px 0px;
 }
 
@@ -312,24 +319,129 @@ ul, li{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* width: 100%; */
+    margin-top: 10px;
+
 }
 
-.form-block p{
+.form-block .input{
+    position: relative;
+}
+
+.form-block input,
+.form-block textarea{
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    outline: 0;
+    font-size: 1.3rem;
     color: #fff;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 5px;
-    font-size: 16px;
+    width: 640px;
+    padding: 7px 0;
+    background: transparent;
+    margin-bottom: 30px;
+    transition: 0.2s linear;
 }
 
-.form-block input.small{
-    padding: 10px 0px;
-    padding-left: 10px;
-    margin-bottom: 10px;
-    outline: none;
-    border: none;
-    /* min-width: 100%; */
+.form-block textarea{
+    padding: 30px 0px;
 }
+
+.form-block input:focus,
+.form-block textarea:focus{
+    outline: none !important;
+    border-color: #ee760c;
+}
+
+input:focus + .form-label{
+    top: -10px;
+    font-size: 12px;
+    color: #e67e22;   
+}
+
+textarea:focus + .form-label{
+    font-size: 12px;
+    top: -60;
+    color: #ee760c;
+}
+
+.form-block .form-label{
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s linear;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+.form-label[for="message"]{
+    top: -40px;
+}
+
+.form-block button{
+    text-align: center;
+    color: #e3e3e3;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid #ee760c;
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 30px;
+    transition: 0.3s ease-in;    
+}
+
+.form-block button:hover{
+    padding: 10px 40px;
+    background: #e67e22;
+    cursor: pointer;
+    color:#34495e;
+}
+
+.form-block .button{
+    text-align: center;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-80{
+    margin-bottom: 80px;
+}
+
+.footer{
+    padding: 50px 0px;
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .logo{
+    font-size: 1.6rem;
+    border-radius: 50%;
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    padding: .6rem;
+    display: inline;
+    background-color: #e67e22;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.footer .copyright{
+    color: #7d7d7d;
+    font-family: "Maven pro",sans-serif;
+    font-weight: 500;
+    font-size: inherit;
+}
+
+
+
+
 
 
 /* media  */
