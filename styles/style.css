@@ -337,14 +337,18 @@ ul, li{
     font-size: 1.3rem;
     color: #fff;
     width: 640px;
-    padding: 7px 0;
+    /* padding: 7px 0; */
     background: transparent;
     margin-bottom: 30px;
     transition: 0.2s linear;
 }
 
+.form-block input{
+    padding: 7px 0px;
+}
+
 .form-block textarea{
-    padding: 30px 0px;
+    padding-bottom: 40px;
 }
 
 .form-block input:focus,
@@ -361,7 +365,7 @@ input:focus + .form-label{
 
 textarea:focus + .form-label{
     font-size: 12px;
-    top: -60;
+    top: -42px;
     color: #ee760c;
 }
 
@@ -376,7 +380,7 @@ textarea:focus + .form-label{
 }
 
 .form-label[for="message"]{
-    top: -40px;
+    top: -30px;
 }
 
 .form-block button{

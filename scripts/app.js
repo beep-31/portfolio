@@ -12,10 +12,18 @@ window.addEventListener('DOMContentLoaded', function(){
             element.style.color = "#fff";
             element.style.backgroundColor = "#e67e22";
             let cursor = document.querySelector(".typed-cursor");
-            console.log(cursor);
             cursor.classList.remove("typed-cursor--blink");
         }
 
+    });
+
+    $('[data-scroll]').on('click', function(event){
+        event.preventDefault();
+        let elementID = $(this).data('scroll');
+        let elementOffset = $(elementID).offset().top;
+        $("html, body").animate({
+            scrollTop: elementOffset
+        }, 700);
     });
 
 
