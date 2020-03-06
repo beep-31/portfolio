@@ -39,6 +39,7 @@ ul, li{
     list-style: none;
 }
 
+
 .container{
     max-width: 1190px;
     padding: 0px 10px;
@@ -168,6 +169,10 @@ ul, li{
 }
 
 .experience .block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     width: 33%;
 }
@@ -228,7 +233,7 @@ ul, li{
 .works .portfolio-pages .page.reverse{
     display: flex;
     flex-direction: row-reverse;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .page .img img{
@@ -244,7 +249,7 @@ ul, li{
 }
 
 .page.reverse .txt-part{
-    padding-right: 50px;
+    padding-right: 0px;
     margin-left: 100px;
 }
 
@@ -483,4 +488,147 @@ textarea:focus + .form-label{
         color: #fff;
         background-color: #e67e22;
     }
+}
+
+@media (max-width:1024px){
+    .page .txt-part .page-description{
+        margin-bottom: 80px;
+    }
+
+    .page .img img{
+        width: 600px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px){
+
+    .works .description{
+        margin-bottom: 70px;
+    }
+
+    .works .portfolio-pages .page{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    
+    .works .portfolio-pages .page.reverse{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page.reverse .txt-part{
+        margin-left: 0px;
+    }
+
+    .page .txt-part{
+        padding-right: 0px;
+    }
+
+    .page .txt-part .page-description,
+    .page.reverse .txt-part .page-description{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .page .txt-part .visit,
+    .page.reverse .txt-part .visit{
+        margin-bottom: 50px;
+    }
+
+    .contact .description{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width:425px){
+
+    .intro .portfolio-img img{
+        width: 250px;
+        height: 250px;
+    }
+
+    .works{
+        padding: 50px 0px;
+    }
+
+    .intro .details span{
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .experience{
+        padding: 60px 0px;
+    }
+
+    .experience .blocks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience .blocks .block ul{
+        margin-bottom: 40px;
+    }
+
+    .page .img img{
+        width: 400px;
+        height: auto;
+    }
+
+    .form-block input,
+    .form-block textarea{
+        width: 400px;
+    }
+
+    .contact .description{
+        font-size: 20px;
+    }
+    .contact .title{
+        font-size: 27px;
+    }
+
+}
+@media (max-width:375px){
+    .form-block input,
+    .form-block textarea{
+        width: 250px;
+    }
+
+    .page .img img{
+        width: 320px;
+        height: auto;
+    }
+}
+
+@media (max-width:320px){
+    .form-block input,
+    .form-block textarea{
+        width: 200px;
+    }
+
+    .contact .description{
+        font-size: 18px;
+    }
+    .contact .title{
+        font-size: 25px;
+    }
+
+    .block li{
+        font-size: 15px;
+    }
+
+    .intro .details span{
+        font-size: 22px;
+    }
+
 }
