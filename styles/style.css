@@ -449,10 +449,6 @@ textarea:focus + .form-label{
 }
 
 
-
-
-
-
 /* media  */
 
 @media (max-width:1440px){
@@ -507,30 +503,57 @@ textarea:focus + .form-label{
         margin-bottom: 70px;
     }
 
-    .works .portfolio-pages .page{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .works .portfolio-pages .page,
+     .works .portfolio-pages .page.reverse{
         text-align: center;
-        margin-bottom: 70px;
+        position: relative;
+        width: 100%;
+        height: 500px;
     }
     
-    .works .portfolio-pages .page.reverse{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
     .page.reverse .txt-part{
         margin-left: 0px;
     }
 
     .page .txt-part{
         padding-right: 0px;
+    } 
+
+    .page .page-title{
+        position: absolute;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 0px !important;
     }
+
+    .page img{
+        position: absolute;
+        margin: 0 auto;
+        top: 10%;
+        left: 0;
+        right: 0;
+    }
+
+    .page .page-description{
+        position: absolute;
+        margin: 0 auto;
+        top: 80%;
+        left: 0;
+        right: 0;
+        margin-bottom: 0px !important;
+    }
+
+    .page .visit{
+        position: absolute;
+        margin: 0 auto;
+        top: 100%;
+        left: 0;
+        right: 0;
+    }
+
+    
 
     .page .txt-part .page-description,
     .page.reverse .txt-part .page-description{
@@ -552,6 +575,14 @@ textarea:focus + .form-label{
 }
 
 @media (max-width:425px){
+    .works .portfolio-pages .page,
+    .works .portfolio-pages .page.reverse{
+        height: 400px;
+    }
+
+    .page .page-description{
+        top: 70%;
+    }
 
     .intro .portfolio-img img{
         width: 250px;
@@ -599,6 +630,17 @@ textarea:focus + .form-label{
 
 }
 @media (max-width:375px){
+
+    .works .portfolio-pages .page,
+    .works .portfolio-pages .page.reverse{
+        height: 340px;
+    }
+
+    .page .img{
+        top: 20%;
+    }
+
+
     .form-block input,
     .form-block textarea{
         width: 250px;
@@ -611,6 +653,16 @@ textarea:focus + .form-label{
 }
 
 @media (max-width:320px){
+
+    .works .portfolio-pages .page,
+    .works .portfolio-pages .page.reverse{
+        height: 380px;
+    }
+
+    .page .page-description{
+        top: 58%;
+    }
+
     .form-block input,
     .form-block textarea{
         width: 200px;
