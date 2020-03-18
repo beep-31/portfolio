@@ -25,6 +25,43 @@ window.addEventListener('DOMContentLoaded', function(){
             scrollTop: elementOffset
         }, 700);
     });
+    let mail_input = document.querySelector('#input-mail')
+        mail_label = document.querySelector('#mail-label')
+        textarea = document.querySelector('#input-text')
+        form = document.querySelector('#form');
+
+    mail_input.addEventListener('focusout', function(){
+        if(!mail_input.checkValidity()){
+            mail_input.style.borderColor = 'red';
+            mail_label.style.color = 'red';
+            mail_label.style.top = '-10px';
+            mail_label.style.fontSize = '12px';
+        } else if(mail_input.checkValidity()){
+            mail_input.style.borderColor = '#fff';
+            mail_label.style.color = '#fff';
+            mail_label.style.top = '-10px';
+            mail_label.style.fontSize = '12px';
+        } 
+
+        if(mail_input.value == ''){
+            mail_input.style.borderColor = '#fff';
+            mail_label.style.color = '#fff';
+            mail_label.style.top = '0px';
+            mail_label.style.fontSize = '16px';
+        }
+    });
+
+   mail_input.addEventListener('focus', function(){
+        mail_input.style.borderColor = '#ee760c';
+        mail_label.style.color = '#ee760c';
+        mail_label.style.top = '-10px';
+        mail_label.style.fontSize = '12px';
+   });
+
+   form.addEventListener('submit' ,function(){
+        alert('Your message was successfully send!');
+   });
+
 
 
 });

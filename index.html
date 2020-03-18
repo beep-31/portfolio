@@ -194,8 +194,13 @@
                         <div class="page-title"><h2>Mercury Web Page</h2></div>
                         <div class="page-description">Mercury landing page. This company provides software for buisness</div>
                     
-                        <div class="visit">
-                            <a href="" class="visit-btn">Visit Website</a>
+                        <div class="buttons">
+                            <div class="visit">
+                                <a href="" class="visit-btn">Visit Website</a>
+                            </div>
+                            <div class="code">
+                                <a href="https://github.com/beep-31/mercury" class="code-btn">View Code <svg><use xlink:href="#github"></svg></a>
+                            </div>
                         </div>
                     </div>
                     <div class="img">
@@ -207,8 +212,13 @@
                         <div class="page-title"><h2>DesignX web site</h2></div>
                         <div class="page-description">Web Studio DesignX web page. JavaScript tabs, JQuery slider and other functions</div>
                     
-                        <div class="visit">
-                            <a href="" class="visit-btn">Visit Website</a>
+                        <div class="buttons">
+                            <div class="visit">
+                                <a href="" class="visit-btn">Visit Website</a>
+                            </div>
+                            <div class="code">
+                                <a href="https://github.com/beep-31/web-dev-landing" class="code-btn">View Code <svg><use xlink:href="#github"></svg></a>
+                            </div>
                         </div>
                     </div>
                     <div class="img">
@@ -220,8 +230,13 @@
                         <div class="page-title"><h2>Active Box</h2></div>
                         <div class="page-description">Just a simple landing page template that can be used to make similar designs</div>
                     
-                        <div class="visit">
-                            <a href="" class="visit-btn">Visit Website</a>
+                        <div class="buttons">
+                            <div class="visit">
+                                <a href="" class="visit-btn">Visit Website</a>
+                            </div>
+                            <div class="code">
+                                <a href="https://github.com/beep-31/landing" class="code-btn">View Code <svg><use xlink:href="#github"></svg></a>
+                            </div>
                         </div>
                     </div>
                     <div class="img">
@@ -241,17 +256,17 @@
                 Got a question? You can use this form to get in touch with me and I will contact you as soon as possible
             </div>
             <div class="form-block">
-                <form action="">
+                <form id="form">
                     <div class="input">
-                        <input type="text" class="small" name="name">
-                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="input-name" class="small" name="name" required autocomplete="off">
+                        <label for="name" class="form-label" id="name-label">Name</label>
                     </div>
                     <div class="input mb-40">
-                        <input type="text" class="small" name="email">
-                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="input-mail" class="small" name="email" required autocomplete="off">
+                        <label for="email" class="form-label" id="mail-label">Email</label>
                     </div>
                     <div class="input mb-80">
-                        <textarea type="text" class="big" name="message"></textarea>
+                        <textarea type="text" id="input-text" class="big" name="message" required ></textarea>
                         <label for="message" class="form-label">Message</label>
                     </div>
                     <div class="button">
@@ -268,8 +283,6 @@
         </div>
     </footer>
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script> -->
-    <!-- <script src="./scripts/typed.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"

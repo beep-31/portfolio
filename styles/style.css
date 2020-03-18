@@ -1,5 +1,5 @@
-/* @import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,500|Roboto:400,500&display=swap'); */
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Maven+Pro:400,500|Roboto:400,500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Maven+Pro:500&display=swap');
+
 *,
 :before,
 :after{
@@ -7,7 +7,6 @@
     padding: 0;
     margin: 0;
 }
-
 textarea{
     resize: none;
     overflow-y: hidden;
@@ -15,7 +14,7 @@ textarea{
 
 h2, h3{
     font-family: 'Lato', sans-serif !important;
-    font-weight: 500 !important;
+    font-weight: 900 !important;
 }
 
 button{
@@ -33,6 +32,7 @@ body, html{
 
 a{
     text-decoration: none;
+    display: inline-block;
 }
 
 ul, li{
@@ -114,7 +114,7 @@ ul, li{
 .intro .contact-btn{
     color: #ee760c;
     font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     border: 2px solid #ee760c;
     border-radius: 50px;
@@ -182,7 +182,7 @@ ul, li{
 }
 
 .experience .block .title{
-    font-weight: 500;
+    font-weight: 400;
     font-family: "Lato", sans-serif;
     margin-bottom: 25px;
 }
@@ -266,7 +266,7 @@ ul, li{
     font-size: 20px;
     color: #738182;
     line-height: 1.5;
-    margin-bottom: 120px;
+    margin-bottom: 30px;
 }
 
 .page .visit .visit-btn{
@@ -281,6 +281,8 @@ ul, li{
     background-color: transparent;
     border-radius: 45px;
     padding: 12px 40px;
+    margin-bottom: 30px;
+    
 }
 
 .page .visit .visit-btn:hover{
@@ -294,6 +296,43 @@ ul, li{
     outline: 0;
     color: #fff;
     background-color: #e67e22;
+}
+
+.page .code .code-btn{
+    font-size: 16px;
+    line-height: normal;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    transition: .3s ease-in-out;
+    border: 2px solid #34495e;
+    color: #fff;
+    background-color: #34495e;
+    border-radius: 45px;
+    padding: 12px 40px;
+}
+
+.page .code .code-btn:hover{
+    padding: 12px 50px;
+    color: #34495e;
+    background-color: transparent;
+}
+
+.page .code .code-btn:focus,
+.page .code .code-btn:active{
+    outline: 0;
+    color: #34495e;
+    background-color: transparent;
+}
+
+
+.page .code svg{
+    width: 18px;
+    height: 18px;
+    fill: #575757;
+    display: inline-block;
+    vertical-align: top;
+
 }
 
 /* contact section  */
@@ -356,24 +395,6 @@ ul, li{
     padding-bottom: 40px;
 }
 
-.form-block input:focus,
-.form-block textarea:focus{
-    outline: none !important;
-    border-color: #ee760c;
-}
-
-input:focus + .form-label{
-    top: -10px;
-    font-size: 12px;
-    color: #e67e22;   
-}
-
-textarea:focus + .form-label{
-    font-size: 12px;
-    top: -42px;
-    color: #ee760c;
-}
-
 .form-block .form-label{
     position: absolute;
     top: 0;
@@ -388,11 +409,48 @@ textarea:focus + .form-label{
     top: -30px;
 }
 
+.form-block input:focus,
+.form-block textarea:focus{
+    outline: none !important;
+    border-color: #ee760c;
+}
+
+input:focus + .form-label{
+    top: -10px;
+    font-size: 12px;
+}
+
+textarea:focus + .form-label{
+    font-size: 12px;
+    top: -42px;
+    color: #e67e22;
+}
+
+#input-name:valid + .form-label[for="name"]{
+    color: #fff;
+    font-size: 12px;
+    top: -10px;
+}
+
+#input-name:focus + .form-label[for="name"]{
+    color: #e67e22;
+}
+
+#input-mail:valid + .form-label[for="email"]{
+    color: #fff;
+    font-size: 12px;
+    top: -10px;
+}
+
+#input-mail:focus + .form-label[for="email"]{
+    color: #e67e22;
+}
+
 .form-block button{
     text-align: center;
     color: #e3e3e3;
     font-family: "Lato", sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     border: 2px solid #ee760c;
     border-radius: 50px;
@@ -465,18 +523,11 @@ textarea:focus + .form-label{
     }
 
     .page .visit .visit-btn,
-    .page.reverse .visit-btn{
-        font-size: 14px;
-        line-height: normal;
-        text-transform: uppercase;
-        font-family: 'Lato', sans-serif;
-        font-weight: 900;
-        transition: .3s ease-in-out;
-        border: 2px solid #ee760c;
-        color: #e67e22;
-        background-color: transparent;
-        border-radius: 45px;
+    .page.reverse .visit-btn,
+    .page .code .code-btn,
+    .page.code .code-btn{
         padding: 9px 35px;
+        font-size: 14px;
     }
     
     .page .visit .visit-btn:hover{
@@ -488,7 +539,12 @@ textarea:focus + .form-label{
 
 @media (max-width:1024px){
     .page .txt-part .page-description{
-        margin-bottom: 80px;
+        margin-bottom: 25px;
+    }
+
+    .page .visit .visit-btn,
+    .page.reverse .visit-btn{
+        margin-bottom: 10px;
     }
 
     .page .img img{
@@ -504,11 +560,11 @@ textarea:focus + .form-label{
     }
 
     .works .portfolio-pages .page,
-     .works .portfolio-pages .page.reverse{
+    .works .portfolio-pages .page.reverse{
         text-align: center;
         position: relative;
         width: 100%;
-        height: 500px;
+        height: 550px;
     }
     
     .page.reverse .txt-part{
@@ -539,13 +595,21 @@ textarea:focus + .form-label{
     .page .page-description{
         position: absolute;
         margin: 0 auto;
-        top: 80%;
+        top: 70%;
         left: 0;
         right: 0;
         margin-bottom: 0px !important;
     }
 
     .page .visit{
+        position: absolute;
+        margin: 0 auto;
+        top: 88%;
+        left: 0;
+        right: 0;
+    }
+
+    .page .code{
         position: absolute;
         margin: 0 auto;
         top: 100%;
@@ -618,7 +682,7 @@ textarea:focus + .form-label{
 
     .form-block input,
     .form-block textarea{
-        width: 400px;
+        width: 300px;
     }
 
     .contact .description{
@@ -633,11 +697,20 @@ textarea:focus + .form-label{
 
     .works .portfolio-pages .page,
     .works .portfolio-pages .page.reverse{
-        height: 340px;
+        height: 350px;
     }
 
     .page .img{
         top: 20%;
+    }
+
+    .page .page-description{
+        position: absolute;
+        margin: 0 auto;
+        top: 60%;
+        left: 0;
+        right: 0;
+        margin-bottom: 0px !important;
     }
 
 
