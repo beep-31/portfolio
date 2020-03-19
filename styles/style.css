@@ -30,9 +30,12 @@ body, html{
     overflow-x: hidden;
 }
 
+.works a{
+    display: inline-block;
+}
+
 a{
     text-decoration: none;
-    display: inline-block;
 }
 
 ul, li{
@@ -107,8 +110,10 @@ ul, li{
 }
 
 .contact-button{
-    text-align: center;
+    position: relative;
     margin-bottom: 70px;
+    width: 100%; 
+    text-align: center;
 }
 
 .intro .contact-btn{
@@ -131,8 +136,10 @@ ul, li{
 }
 
 .intro .icon{
-    text-align: center;
-}
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} 
 
 .intro svg{
     /* fill: #fff; */
@@ -141,6 +148,7 @@ ul, li{
     margin-bottom: 20px;
     opacity: 0.8;
     transition: 0.3s ease-in-out;
+    margin: 5px 2px;
 }
 
 .intro svg:hover{
