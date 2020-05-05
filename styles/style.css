@@ -1,4 +1,48 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,900|Maven+Pro:500&display=swap');
+/* Lato regular */
+
+@font-face{
+    font-family: 'Lato';
+    src: url("../fonts/Lato/Lato Regular/Lato-Regular.eot"),
+         url("../fonts/Lato/Lato Regular/Lato-Regular.woff2") format('woff2'),
+         url("../fonts/Lato/Lato Regular/Lato-Regular.woff") format('woff'),
+         url("../fonts/Lato/Lato Regular/Lato-Regular.ttf") format('trutype');
+        
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Lato Light  */
+@font-face{
+    font-family: 'Lato';
+    src: url("../fonts/Lato/Lato Light/Lato-Light.eot"),
+         url("../fonts/Lato/Lato Light/Lato-Light.woff2") format('woff2'),
+         url("../fonts/Lato/Lato Light/Lato-Light.woff") format('woff'),
+         url("../fonts/Lato/Lato Light/Lato-Light.ttf") format('trutype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Lato Bold  */
+@font-face {
+    font-family: 'Lato';
+    src: url("../fonts/Lato/Lato Black/Lato-Black.eot"),
+         url("../fonts/Lato/Lato Black/Lato-Black.woff2") format('woff2'),
+         url("../fonts/Lato/Lato Black/Lato-Black.woff") format('woff'),
+         url("../fonts/Lato/Lato Black/Lato-Black.ttf") format('trutype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Maven pro medium */
+@font-face{
+    font-family: 'Maven Pro';
+    src: url("../fonts/Maven Pro/MavenPro-Medium.eot"),
+         url("../fonts/Maven Pro/MavenPro-Medium.woff2") format('woff2'),
+         url("../fonts/Maven Pro/MavenPro-Medium.woff") format('woff'),
+         url("../fonts/Maven Pro/MavenPro-Medium.ttf") format('trutype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 *,
 :before,
